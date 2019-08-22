@@ -96,4 +96,7 @@ We note that it reached the desired score of 30 consistently after 130 episodes 
 
 We added a gif showing a trained agent. This agent reached a score of 38.0 and follows the ball pretty well during the whole episode.
 
+## Future Work
+
+In future, we could compare this method to other policy based methods, such as A2C, taking advantage of the parallelisation of different agents. We can also try this algorithm on more challenging environments, such as the crawler environment. This will require to optimise the architecture even more carefully to make the agent learn something. We would like to investigate such examples in future.
 
