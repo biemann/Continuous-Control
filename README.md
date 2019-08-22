@@ -1,7 +1,7 @@
 [//]: # (Image References)
 
 [image1]: https://github.com/biemann/Continuous-Control/blob/master/bin/solved_in_80.png "Solved"
-[image2]: https://user-images.githubusercontent.com/10624937/43851646-d899bf20-9b00-11e8-858c-29b5c2c94ccc.png "Crawler"
+[image2]: https://github.com/biemann/Continuous-Control/blob/master/bin/Reacher.gif "Gif"
 
 
 # Continuous Control
@@ -91,3 +91,9 @@ We have here a graph, showing the learning of our best result.
 ![Solved][image1]
 
 We note that it reached the desired score of 30 consistently after 130 episodes and was being closed to 40 at the end of the training. The trend is quite similar to what we saw with the Q-learning algorithm : it has quite some trouble to learn anything at the beginning, learns fast in the middle and reaches a plateau at the end, because it learned the task (the maximum score should be around 40).
+
+![Gif][image2]
+
+We added a gif showing a trained agent. This agent reached a score of 38.0 and follows the ball pretty well during the whole episode.
+
+
