@@ -73,6 +73,6 @@ class Critic(nn.Module):
         """Build a critic (value) network that maps (state, action) pairs -> Q-values."""
 
         xs = F.selu(self.fc1(state))
-        x = torch.cat((xs, action), dim=1)
+        x = torch.cat((xs, action), dim = 1)
         x = F.selu(self.fc2(x))
         return self.fc3(x)

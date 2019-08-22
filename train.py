@@ -19,7 +19,7 @@ action_size = brain.vector_action_space_size
 scores = [] 													 # initialize the score 
 scores_window = deque(maxlen = 100) 
                           
-def ddpg(n_episodes = 1000, max_t = 1000):
+def ddpg(n_episodes = 500, max_t = 1000):
 	
 	for i_episode in range(1, n_episodes + 1):
 	   	env_info = env.reset(train_mode = True)[brain_name]     
@@ -37,7 +37,7 @@ def ddpg(n_episodes = 1000, max_t = 1000):
 		   	agent.step(state, action, reward, next_state, done)
 		   	state = next_state									# roll over states to next time step								
 		   	score += reward										# update the score 
-		   	
+
 		   	if done:											# exit loop if episode finished
 		   		break
 
