@@ -66,7 +66,7 @@ Thie idea is to use policy-based method instead, using a critic network. The act
 
 In addition, in order to encourage exploration, they also implemented the Ornstein-Uhlenbeck noise. For more details, we refer to the original paper or to understand how it is implemented to the code.
 
-## Implementation of the Q-learning algorithm
+## Implementation of the DDPG algorithm
 
 The `ddpg_agent.py`class is an implementation of the DDPG algorithm following the DeepMind paper as exposed in this nanodegree. The only slight modification we did was an implementation of a learning rate scheduler in order to help solving the task faster. 
 
